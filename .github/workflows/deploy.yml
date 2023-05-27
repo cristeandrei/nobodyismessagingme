@@ -5,7 +5,7 @@ name: push-job
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Deploy
     steps:
       # To use this repository's private action,
       # you must check out the repository
@@ -15,10 +15,13 @@ jobs:
       - name: Install all dependencies
         run: npm install
 
+      - name: Run Tests
+        run: npm test
+
       - name: Build
         run: npx nuxi generate
 
-      - name: Push
+      - name: Publish
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
