@@ -1,12 +1,8 @@
-<script lang="ts" setup>
-import InProgressComponent from '@/components/InProgressComponent.vue'
-import SceneComponent from '@/components/SceneComponent.vue'
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="wrapper">
-    <InProgressComponent />
-    <SceneComponent />
+    <h1>Under construction</h1>
   </div>
 </template>
 

@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import SceneComponent from '../SceneComponent.vue'
+import HomeView from '../../views/HomeView.vue'
 
 describe('HelloWorld', () => {
   it('renders properly', () => {
-    const wrapper = mount(SceneComponent, { props: {} })
-    expect(wrapper.text()).not.toContain('In')
+    const wrapper = mount(HomeView, { props: {} })
+    expect(wrapper.text()).toContain('Under construction')
   })
 })
