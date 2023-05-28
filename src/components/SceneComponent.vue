@@ -5,6 +5,11 @@ import ServerComponent from '@/components/ServerComponent.vue'
 import LetterComponent from '@/components/LetterComponent.vue'
 
 onMounted(() => {
+  animateMessaging()
+  window.addEventListener('resize', animateMessaging)
+})
+
+function animateMessaging() {
   const letter = document.querySelector('.letter')
   const serverTwo = document.querySelector('.two')
 
@@ -26,7 +31,7 @@ onMounted(() => {
     loop: true,
     easing: 'easeInOutSine'
   })
-})
+}
 </script>
 
 <template>
@@ -39,7 +44,7 @@ onMounted(() => {
 
 <style scoped>
 .scene {
-  width: 500px;
+  width: 60vw;
   display: flex;
   justify-content: flex-start;
 }
