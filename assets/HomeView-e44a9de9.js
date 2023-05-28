@@ -1,0 +1,1 @@
+import{o as _,c as d,p as n,a,b as r}from"./index-860e8e3a.js";const p=(e,o)=>{const t=e.__vccOpts||e;for(const[c,s]of o)t[c]=s;return t},i={},l=e=>(n("data-v-d606d917"),e=e(),a(),e),u={class:"wrapper"},f=l(()=>r("h1",null,"Under construction",-1)),h=[f];function v(e,o){return _(),d("div",u,h)}const w=p(i,[["render",v],["__scopeId","data-v-d606d917"]]);export{w as default};
