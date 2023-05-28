@@ -1,18 +1,17 @@
 <script lang="ts" setup>
-import Scene from "~/components/scene.vue";
-import InProgress from "~/components/inProgress.vue";
+import InProgressComponent from '@/components/InProgressComponent.vue'
+import SceneComponent from '@/components/SceneComponent.vue'
 </script>
 
 <template>
   <div class="wrapper">
-    <in-progress/>
-    <scene/>
+    <InProgressComponent />
+    <SceneComponent />
   </div>
 </template>
 
-<style>
+<style scoped>
 .wrapper {
-  background-color: beige;
   height: 100vh;
   display: flex;
   justify-content: center;
